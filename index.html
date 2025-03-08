@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Graficación 2D con Canvas</title>
+    <style>
+        canvas {
+            border: 1px solid black;
+            display: block;
+            margin-bottom: 10px;
+        }
+        .button-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+    </style>
+</head>
+<body>
+    <canvas id="canvas" width="500" height="500"></canvas>
+    <div class="button-container">
+        <button onclick="clearCanvas()">Limpiar</button>
+        <button onclick="drawSquare()">Cuadrado</button>
+        <button onclick="drawRectangle()">Rectángulo</button>
+        <button onclick="drawTriangle()">Triángulo</button>
+        <button onclick="drawLines()">Líneas</button>
+        <button onclick="drawArc()">Arco (Círculo)</button>
+        <button onclick="drawBezierCurve()">Curva Bézier</button>
+        <button onclick="drawQuadraticCurve()">Curva Cuadrática</button>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
+
